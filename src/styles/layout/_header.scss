@@ -1,0 +1,14 @@
+header {
+  height: 68px;
+  margin: 25px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  list-style-type: none;
+  display: flex;
+  gap: 57px;
+  font-size: 1.3em;
+}

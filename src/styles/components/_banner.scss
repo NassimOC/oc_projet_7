@@ -1,0 +1,14 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0, .60) url("../../images/image_source_1.png") center;
+  background-blend-mode: darken;
+  height: 223px;
+  border-radius: 25px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
+    &--content {
+      font-size: 48px;
+      color: white;
+    }
+}

@@ -1,0 +1,9 @@
+@mixin box-shadow($opacity) {
+  box-shadow: 0 4px 15px 0 rgba(0,0,0,$opacity);
+}
+
+@mixin mediaq {
+  @media screen and (min-width:$breakpoint) {
+    flex-direction: row;
+  }
+}
