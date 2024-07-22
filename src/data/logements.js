@@ -1,3 +1,5 @@
+export const listLogement = 
+
 [
 	{
 		"id": "c67ab8a7",

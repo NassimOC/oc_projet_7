@@ -4,11 +4,34 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  @media screen and (max-width:640px) {
+    margin: 25px 20px;
+  }
+}
+
+.main-logo {
+  max-width: 210.32px;
+  width: 40%;
+
+  @media screen and (max-width:640px) {
+    
+  }
 }
 
 .navbar {
-  list-style-type: none;
   display: flex;
-  gap: 57px;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
   font-size: 1.3em;
+  font-weight: 500;
+
+  @media screen and (max-width:640px) {
+    font-size: 1em;
+  }
+}
+
+.active_link {
+  text-decoration: underline;
 }
