@@ -1,0 +1,9 @@
+@keyframes about-display {
+  0%,
+  50% {
+    transform: translateY(-999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

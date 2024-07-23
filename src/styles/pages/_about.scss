@@ -1,0 +1,11 @@
+.about-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+
+  @media screen and (max-width:$breakpoint) {
+    width: 100%;
+  }
+}

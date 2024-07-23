@@ -2,28 +2,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0,0,0, .60) url("../../images/image_source_1.png") center no-repeat;
-  background-size: cover;
-  background-blend-mode: darken;
+  background: rgba(0, 0, 0, 0.5);
   height: 223px;
   border-radius: 25px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   margin: 42px 0;
+  position: relative;
 
-  @media screen and (max-width:640px) {
+  @media screen and (max-width: $breakpoint) {
     height: 111px;
     border-radius: 10px;
     margin: 22px 0;
   }
 
-    &--content {
-      font-size: 48px;
-      font-weight: 700;
-      margin: 0 20px;
-      color: white;
-      
-      @media screen and (max-width:640px) {
-        font-size: 1.6em;
-      }
+  &--content {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 20px;
+    color: white;
+
+    @media screen and (max-width: $breakpoint) {
+      font-size: 1.6em;
     }
+  }
+
+  &--img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    border-radius: 25px;
+
+    @media screen and (max-width: $breakpoint) {
+      border-radius: 10px;
+    }
+  }
 }

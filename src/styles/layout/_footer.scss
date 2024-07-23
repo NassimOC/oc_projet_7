@@ -7,7 +7,7 @@ footer {
   align-items: center;
   color: white;
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: $breakpoint) {
     justify-content: center;
     gap: 14px
   }
@@ -23,7 +23,7 @@ footer img {
   font-size: 1.3em;
   text-align: center;
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: $breakpoint) {
     width: 40%;
     font-size: 1em;
   }
