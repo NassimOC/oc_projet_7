@@ -1,0 +1,31 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  &--404 {
+    font-size: 15em;
+    font-weight: 700;
+    color: $main-color;
+
+    @media screen and (max-width:$breakpoint) {
+      font-size: 5em;
+    }
+  }
+
+  &--message {
+    font-size: 1.8em;
+    text-align: center;
+    color: $main-color;
+
+    @media screen and (max-width:$breakpoint) {
+      font-size: 1em;
+    }
+  }
+
+  &--back {
+    text-decoration: underline;
+    text-align: center;
+  }
+}

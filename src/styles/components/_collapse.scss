@@ -55,9 +55,11 @@
   &.active {
     max-height: 200px;
     transition: max-height 0.8s ease;
+
     & p {
       animation: about-display 0.3s ease;
     }
+
     & .collapse--toggle {
       transform: rotate(-0.5turn);
       transition: 0.5s ease-out;
