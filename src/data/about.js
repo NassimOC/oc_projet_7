@@ -1,4 +1,4 @@
-export const aboutList = [
+export const listAbout = [
   {
     title: 'Fiabilité',
     content:

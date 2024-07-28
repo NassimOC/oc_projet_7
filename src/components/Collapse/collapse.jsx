@@ -2,8 +2,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
-function Collapse({ title, content }) {
+function Collapse({ title, content, list }) {
   const [isActive, setIsActive] = useState(false);
+
+  const isObject = (value) => value === true;
 
   const toggleActiveState = () => {
     setIsActive((prevState) => !prevState);
@@ -19,7 +21,13 @@ function Collapse({ title, content }) {
           onClick={toggleActiveState}
         />
       </div>
-      <p>{content}</p>
+      <ul>
+        {isObject(list) ? (
+          content.map((text, key) => <li key={key}>{text}</li>)
+        ) : (
+          <li>{content}</li>
+        )}
+      </ul>
     </div>
   );
 }

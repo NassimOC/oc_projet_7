@@ -2,12 +2,12 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../images/LOGO.svg';
 
-const selected = ({ isActive }) => (isActive ? "active_link" : "");
+const selected = ({ isActive }) => (isActive ? 'active_link' : '');
 
 function Header() {
   return (
     <header>
-      <img src={logo} alt="logo Kasa" className='main-logo'/>
+      <img src={logo} alt="logo Kasa" className="main-logo" />
       <nav className="navbar">
         <NavLink to="/" className={selected}>
           Accueil

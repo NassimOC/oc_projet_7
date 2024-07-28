@@ -4,8 +4,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  @media screen and (max-width:$breakpoint) {
+
+  @media screen and (max-width: $breakpoint) {
     margin: 25px 20px;
   }
 }
@@ -14,8 +14,7 @@ header {
   max-width: 210.32px;
   width: 40%;
 
-  @media screen and (max-width:$breakpoint) {
-    
+  @media screen and (max-width: $breakpoint) {
   }
 }
 
@@ -27,7 +26,7 @@ header {
   font-size: 1.3em;
   font-weight: 500;
 
-  @media screen and (max-width:$breakpoint) {
+  @media screen and (max-width: $breakpoint) {
     font-size: 1em;
   }
 }

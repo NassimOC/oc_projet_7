@@ -1,5 +1,5 @@
 * {
-  font-family: 'Montserrat','sans-serif';
+  font-family: 'Montserrat', 'sans-serif';
 }
 
 body {
@@ -16,7 +16,7 @@ main {
   padding: 0;
   box-sizing: border-box;
 
-  @media screen and (max-width:$breakpoint) {
+  @media screen and (max-width: $breakpoint) {
     margin: 25px 20px;
   }
 }

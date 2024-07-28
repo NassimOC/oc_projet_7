@@ -9,7 +9,7 @@
     font-weight: 700;
     color: $main-color;
 
-    @media screen and (max-width:$breakpoint) {
+    @media screen and (max-width: $breakpoint) {
       font-size: 5em;
     }
   }
@@ -19,7 +19,7 @@
     text-align: center;
     color: $main-color;
 
-    @media screen and (max-width:$breakpoint) {
+    @media screen and (max-width: $breakpoint) {
       font-size: 1em;
     }
   }

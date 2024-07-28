@@ -1,0 +1,129 @@
+.infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+
+  &--left {
+    margin-top: 10px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & p {
+      margin: 0;
+    }
+
+    & h1 {
+      color: $main-color;
+      margin: 0;
+
+      @media screen and (max-width: $breakpoint) {
+        font-weight: 500;
+        font-size: 1.5em;
+      }
+    }
+
+    & ul {
+      margin: 0;
+      list-style-type: none;
+      display: flex;
+      padding: 0;
+      gap: 8px;
+
+      & li {
+        background-color: $main-color;
+        color: white;
+        font-size: 0.9em;
+        padding: 4px 16px;
+        border-radius: 10px;
+
+        @media screen and (max-width: $breakpoint) {
+          font-size: 0.7em;
+        }
+      }
+    }
+
+    @media screen and (max-width: $breakpoint) {
+      width: 100%;
+    }
+  }
+
+  &--right {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: $breakpoint) {
+      width: 100%;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint) {
+    flex-direction: column;
+  }
+}
+
+.host {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 64px;
+  gap: 8px;
+
+  &--name {
+    color: $main-color;
+    font-size: 1.2em;
+    text-align: end;
+    width: 60%;
+
+    @media screen and (max-width: $breakpoint) {
+      font-size: 1em;
+    }
+  }
+
+  &--picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+
+    @media screen and (max-width: $breakpoint) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint) {
+    width: 40%;
+  }
+}
+
+.rating {
+  margin-left: auto;
+  margin-top: 8px;
+  display: flex;
+  gap: 5px;
+
+  @media screen and (max-width: $breakpoint) {
+    margin: 0;
+  }
+}
+
+.star {
+  font-size: 1.6em;
+
+  &--active {
+    color: $main-color;
+  }
+
+  &--inactive {
+    color: #e3e3e3;
+  }
+
+  @media screen and (max-width: $breakpoint) {
+    font-size: 1em;
+  }
+}

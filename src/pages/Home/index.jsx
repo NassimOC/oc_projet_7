@@ -1,6 +1,6 @@
 import Banner from '../../components/Banner/Banner';
 import Card from '../../components/Card/card';
-import { listLogement } from '../../data/logements';
+import { listProperties } from '../../data/properties';
 import image from '../../images/image_source_1.png';
 
 function Home() {
@@ -8,11 +8,12 @@ function Home() {
     <div>
       <Banner image={image} content="Chez vous, partout et ailleurs" />
       <div className="card-container">
-        {listLogement.map((logement) => (
+        {listProperties.map((property) => (
           <Card
-            key={logement.id}
-            cover={logement.cover}
-            title={logement.title}
+            key={property.id}
+            cover={property.cover}
+            title={property.title}
+            id={property.id}
           />
         ))}
       </div>

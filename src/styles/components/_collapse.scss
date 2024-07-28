@@ -44,7 +44,9 @@
     }
   }
 
-  & p {
+  & ul {
+    list-style-type: none;
+    padding: 0;
     margin: 14px;
 
     @media screen and (max-width: $breakpoint) {
@@ -56,7 +58,7 @@
     max-height: 200px;
     transition: max-height 0.8s ease;
 
-    & p {
+    & ul {
       animation: about-display 0.3s ease;
     }
 
