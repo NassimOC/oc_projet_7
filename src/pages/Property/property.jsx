@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import Carousel from '../../components/Slideshow/slideshow';
 import Collapse from '../../components/Collapse/collapse';
 import { listProperties } from '../../data/properties';
@@ -10,6 +11,10 @@ function Property() {
   const selectedProperty = listProperties.find(
     (property) => property.id === id
   );
+
+  if (!selectedProperty) {
+    return <Navigate to="/error" />;
+  }
 
   return (
     <div>

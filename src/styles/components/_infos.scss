@@ -17,6 +17,7 @@
 
     & h1 {
       color: $main-color;
+      font-weight: 500;
       margin: 0;
 
       @media screen and (max-width: $breakpoint) {
@@ -105,15 +106,16 @@
   margin-left: auto;
   margin-top: 8px;
   display: flex;
-  gap: 5px;
+  gap: 12px;
 
   @media screen and (max-width: $breakpoint) {
     margin: 0;
+    gap: 6px;
   }
 }
 
 .star {
-  font-size: 1.6em;
+  font-size: 1.4em;
 
   &--active {
     color: $main-color;
