@@ -1,20 +1,25 @@
 header {
+  max-width: 1240px;
   height: 68px;
-  margin: 25px 50px;
+  margin: auto;
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  
   @media screen and (max-width: $breakpoint) {
-    margin: 25px 20px;
+    margin-top: 10px;
+    padding: 0 14px;
   }
 }
 
 .main-logo {
-  max-width: 210.32px;
-  width: 40%;
+  width: 210.32px;
+  height: 68px;
 
   @media screen and (max-width: $breakpoint) {
+    width: 145px;
+    height: 46.88px;
   }
 }
 
@@ -23,11 +28,11 @@ header {
   gap: 20px;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.3em;
+  font-size: 24px;
   font-weight: 500;
 
   @media screen and (max-width: $breakpoint) {
-    font-size: 0.8em;
+    font-size: 12px;
     text-transform: uppercase;
   }
 }

@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
 import Carousel from '../../components/Slideshow/slideshow';
 import Collapse from '../../components/Collapse/collapse';
-import { listProperties } from '../../data/properties';
+import listProperties from '../../data/properties';
 import Infos from '../../components/Infos/infos';
 
 function Property() {
@@ -18,7 +18,7 @@ function Property() {
 
   return (
     <div>
-      <Carousel id={id} />
+      <Carousel property={selectedProperty} />
       <Infos property={selectedProperty} />
       <div className="details">
         <Collapse

@@ -1,6 +1,6 @@
 import Banner from '../../components/Banner/Banner';
 import Card from '../../components/Card/card';
-import { listProperties } from '../../data/properties';
+import listProperties from '../../data/properties';
 import image from '../../images/image_source_1.png';
 
 function Home() {

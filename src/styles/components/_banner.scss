@@ -20,9 +20,13 @@
     font-weight: 700;
     margin: 0 20px;
     color: white;
-
+    line-height: 68.45px;
+    
     @media screen and (max-width: $breakpoint) {
-      font-size: 1.6em;
+      font-size: 24px;
+      width: 225px;
+      margin-right: auto;
+      line-height: 24px;
     }
   }
 

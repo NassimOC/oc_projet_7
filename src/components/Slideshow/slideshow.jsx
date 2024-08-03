@@ -1,26 +1,21 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import { useState } from 'react';
-import { listProperties } from '../../data/properties';
 import arrowBack from '../../images/arrow_back.png';
 import arrowForward from '../../images/arrrow_forward.png';
 
-function Carousel({ id }) {
+function Carousel({ property }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  const selectedProperty = listProperties.find(
-    (property) => property.id === id
-  );
 
   function Back() {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide
-      ? selectedProperty.pictures.length - 1
+      ? property.pictures.length - 1
       : currentIndex - 1;
     setCurrentIndex(newIndex);
   }
 
   function Next() {
-    const isLastSlide = currentIndex === selectedProperty.pictures.length - 1;
+    const isLastSlide = currentIndex === property.pictures.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   }
@@ -29,11 +24,11 @@ function Carousel({ id }) {
     <div className="carousel">
       <div className="carousel--img">
         <img
-          src={selectedProperty.pictures[currentIndex]}
-          alt={selectedProperty.title}
+          src={property.pictures[currentIndex]}
+          alt={property.title}
         />
       </div>
-      {selectedProperty.pictures.length > 1 && (
+      {property.pictures.length > 1 && (
         <>
           <img
             src={arrowBack}
@@ -48,7 +43,7 @@ function Carousel({ id }) {
             onClick={Next}
           />
           <p className="numbering">
-            {currentIndex + 1}/{selectedProperty.pictures.length}
+            {currentIndex + 1}/{property.pictures.length}
           </p>
         </>
       )}
